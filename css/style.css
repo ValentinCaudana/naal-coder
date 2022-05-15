@@ -35,23 +35,28 @@ body {
     height: 50px;
 }
 
-.header__accesos {
-    color: black;
-    list-style-type: none;
-    
-     
-}
 
 .header__link__inicio :hover {
     transform: scale(1.5);
 }
 
 
+/* .header__accesos {
+    color: black;
+    list-style-type: none;
+     
+}
+ */
 
-.header__accesos__link{
+
+/* .header__accesos__link{
     color: black;
     text-decoration: none;
     font-weight: bold; 
+} */
+
+.nav-link {
+    color: black;
 }
 
 .header__logo {
@@ -100,7 +105,7 @@ body {
     color: black;
     font-weight: bold;
     width: 200px;
-    height: 140px;
+    height: 200px;
     line-height: 15px;
     text-align:start;
     margin: 5px;
@@ -114,7 +119,7 @@ body {
     display: flex;
     flex-flow:column;
     width: 60%;
-    height: 300px;
+    height: 350px;
     margin: 0 auto;
     justify-content:space-between;
     align-content:center;
@@ -166,7 +171,7 @@ body {
     display: flex;
     flex-flow:column;
     width: 300px;
-    height: 300px;
+    height: 450px;
     margin: 0 auto;
     justify-content:space-between;
     align-content:center;
@@ -184,3 +189,58 @@ body {
 
 }
 
+.grid__containerproductos {
+    display: grid;
+    border: 5px solid rgb(78, 208, 78);
+    grid-template-areas: "uno uno seis" 
+                        "uno uno dos"
+                        "tres cinco cuatro"
+                        "tres cinco cuatro";
+    gap: 10px;
+}
+
+.grid__item {
+    border: 2px solid white;
+    background-color: rgb(103, 176, 103);
+}
+
+.grid__perrosygatos {
+grid-area: uno;
+}
+
+.grid__semillas {
+grid-area: cuatro;
+}
+
+.grid__agroquimicos {
+grid-area: cinco;
+}
+
+.grid__mantas {
+grid-area: dos;
+}
+
+.grid__alimento {
+grid-area: seis;
+}
+
+.grid__idai {
+grid-area: tres;
+}
+
+.grid__containermain {
+    display: grid;
+    border: 5px solid rgb(78, 208, 78);
+    grid-template-areas: "uno dos dos"
+                        "uno dos dos";
+    gap: 10px;
+}
+
+.grid__imag {
+grid-area: uno;
+}
+
+.grid__texto {
+grid-area: dos;
+background-color: rgb(98, 190, 98);
+}
