@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image:url(../recursos/imagenes/fondo-logo-2.jpg);
+    background-image:url(../recursos/imagenes/paisaje-del-campo-de-campos-verdes-fondo-3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -40,6 +40,10 @@ body {
     list-style-type: none;
     
      
+}
+
+.header__link__inicio :hover {
+    transform: scale(1.5);
 }
 
 
