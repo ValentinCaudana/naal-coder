@@ -11,32 +11,17 @@ body {
     background-size: cover;
 }
 
-.flex-containerheader {
-    display: flex;
+.bg-transparente {
+    background-color: rgb(255,255,255,0,5);
 }
 
-.links {
-    border: 2px solid white;
-    background-color: rgb(103, 176, 103);
-    color: black;
-    font-weight: bold;
-    width: 200px;
-    height: 140px;
-    line-height: 15px;
-    text-align:start;
-    margin: 5px;
-    text-decoration: none;
-}
-
-.header__link__inicio {
-    color: black;
-    list-style-type: none;
-    width: 50px;
-    height: 50px;
+.navbar-nav {
+    gap: 10px;
 }
 
 
-.header__link__inicio :hover {
+
+.navbar-brand:hover {
     transform: scale(1.5);
 }
 
@@ -45,27 +30,20 @@ body {
 }
 
 
-/* .header__accesos {
-    color: black;
-    list-style-type: none;
-     
-}
- */
-
-
-/* .header__accesos__link{
-    color: black;
-    text-decoration: none;
-    font-weight: bold; 
-} */
-
 .nav-link {
     color: black;
 }
 
-.header__logo {
-    width: 200px;
-    height: 200px;
+.flex-containerindex{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+
+.edit__img {
+    height: 25rem;
+    width: 50rem;
 }
 
 .main__texto {
@@ -90,30 +68,50 @@ body {
     height: 70px;    
 }
 
-.flex-container2 {
-    border: 1px solid rgb(3, 41, 3);
-    background-color: rgb(98, 222, 98);
-    padding: 20px;
-    display: flex;
-    flex-flow:row wrap;
-    width: 90%;
-    margin: 0 auto;
-    justify-content:space-between;
-    align-content: space-around;
+.grid__container{
+    display: grid;
+    border: 2px solid black;
+    
+    grid-template-areas: "uno dos tres" 
+                        "cuatro cinco seis"
+}
+
+.grid__perrosyatos{
+    grid-template-areas: uno;
+
 }
 
 
-.caja {
-    border: 2px solid white;
-    background-color: rgb(103, 176, 103);
-    color: black;
-    font-weight: bold;
-    width: 200px;
-    height: 200px;
-    line-height: 15px;
-    text-align:start;
-    margin: 5px;
-    text-decoration: none;
+.img__perrosygatos{
+    height: 10rem;
+    width: 10rem;
+    justify-content: center;
+}
+
+.grid__alimento{
+    grid-template-areas: dos;
+}
+
+.grid__mantas{
+    grid-template-areas: tres;
+}
+
+.grid__agroquimicos {
+    grid-template-areas: cuatro;
+}
+
+.grid__semillas{
+    grid-template-areas: cinco;
+}
+
+.grid__idai{
+    grid-template-areas: seis;
+}
+
+
+.item__grid{
+    border: 2px solid black;
+    
 }
 
 .flex-container3 {
@@ -195,47 +193,6 @@ body {
 
 }
 
-.grid__containerproductos {
-    display: grid;
-    border: 5px solid rgb(255, 255, 255, 0,5);
-    grid-template-areas: "uno uno seis" 
-                        "uno uno dos"
-                        "tres cinco cuatro"
-                        "tres cinco cuatro";
-    gap: 30px;
-    justify-content: center;
-
-}
-
-/* .grid__item {
-    border: 2px solid white;
-    background-color: rgb(103, 176, 103);
-    
-} */
-
-.grid__perrosygatos {
-grid-area: uno;
-}
-
-.grid__semillas {
-grid-area: cuatro;
-}
-
-.grid__agroquimicos {
-grid-area: cinco;
-}
-
-.grid__mantas {
-grid-area: dos;
-}
-
-.grid__alimento {
-grid-area: seis;
-}
-
-.grid__idai {
-grid-area: tres;
-}
 
 .grid__containermain {
     display: grid;
@@ -256,7 +213,10 @@ background-color: rgb(255,255,255,0,5);
 
 
 @media (min-width: 320px) and (max-width: 540px){
-
+    .edit__img {
+        height: 10rem;
+        width: 20rem;
+    }
 }
 
 @media (min-width: 541px) and (max-width: 720px){

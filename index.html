@@ -12,32 +12,60 @@
 </head>
 
 <body>
-    <header class="flex-containerheader">
-        <div class="header__link__inicio">
-            <li><a href="index.html"><img src="./recursos/imagenes/favicon.png" alt="link inicio"></a></li>
-        </div>
-<!--         <nav class="header__accesos ">
-            <div>
-                <ul class="header__accesos"> -->
-                    <!-- <li><a href="index.html">Inicio</a></li> -->
-<!--                     <li><a class="header__accesos__link" href="paginas/nosotros.html">Nosotros</a></li>
-                    <li><a class="header__accesos__link" href="paginas/productos.html">Productos</a></li>
-                    <li><a class="header__accesos__link" href="paginas/promociones.html">Pormociones</a></li>
-                    <li><a class="header__accesos__link" href="paginas/contactanos.html">Contactanos</a></li>
-                    </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparente">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="recursos/imagenes/logo-modificado.png" alt="" width="30" height="24" class="d-inline-block align-text-top"></a> 
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="paginas/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="paginas/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="paginas/promociones.html">Pormociones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="paginas/contactanos.html">Contactanos</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav> -->
-        <nav class="nav flex-column">
-            <a class="nav-link" href="paginas/nosotros.html">Nosotros</a>
-            <a class="nav-link" href="paginas/productos.html">Productos</a>
-            <a class="nav-link" href="paginas/promociones.html">Pormociones</a>
-            <a class="nav-link" href="paginas/contactanos.html">Contactanos</a>
           </nav>
-        <div>
-            <img  class= "header__logo" src="./recursos/imagenes/naal-sa-logo.png" alt="Logo de la empresa">
-         </div>
     </header>
-    <main>
+    <main class="flex-containerindex">
+        <section class="container-fluid edit__img">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="recursos/imagenes/foto-carrusel-sembrar-semillas-en-jardin.png" class="d-block w-100 edit__img" alt="foto plantando semillas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="recursos/imagenes/foto-carrusel-perro-gato-comiendo.png" class="d-block w-100 edit__img" alt="foto de perro y gato">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="recursos/imagenes/foto-carrusel-manta.png" class="d-block w-100 edit__img" alt="foto de manta antihelada">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="recursos/imagenes/foto-carrusel-agroquimicos.png" class="d-block w-100 edit__img" alt="foto hombre fumigando">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        
         <section class="main__texto">
            <div>Venta de Semillas Online al Mejor Precio en Naal SA. Tu tienda de Semillas Online. Gran variedad de semillas para huerto y jardín. Compra fácil y envío rápido. Haz tu pedido ahora y recíbelo cómodamente en casa! GRATIS nuestras miniguías de siembra con tu pedido</div>
         </section>
