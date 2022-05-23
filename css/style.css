@@ -69,15 +69,23 @@ body {
 }
 
 .grid__container{
+    margin: 2rem;
+
     display: grid;
-    border: 2px solid black;
-    
+    border: 2px solid  rgb (255,255,255,0,5);
     grid-template-areas: "uno dos tres" 
-                        "cuatro cinco seis"
+                        "cuatro cinco seis";
+    gap: 2rem;
+     text-align: center; 
+    
+
 }
 
 .grid__perrosyatos{
     grid-template-areas: uno;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -85,33 +93,56 @@ body {
 .img__perrosygatos{
     height: 10rem;
     width: 10rem;
-    justify-content: center;
+
 }
 
 .grid__alimento{
     grid-template-areas: dos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .grid__mantas{
     grid-template-areas: tres;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .grid__agroquimicos {
     grid-template-areas: cuatro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .grid__semillas{
     grid-template-areas: cinco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .grid__idai{
     grid-template-areas: seis;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 .item__grid{
-    border: 2px solid black;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255, 0.5);
     
+    
+}
+
+.menu__desplegable {
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
 }
 
 .flex-container3 {
@@ -129,44 +160,7 @@ body {
 
 
 
-.flex-containermain {
-    background-color: rgb(98, 222, 98);
-    padding: 20px;
-    display: flex;
-    flex-flow:row wrap;
-    width: 90%;
-    margin: 0 auto;
 
-}
-
-.containermain-foto {
-
-    color: black;
-    font-weight: bold;
-    width: 250px;
-    height: 150px;
-    line-height: 15px;
-    text-align:start;
-    margin: 5px;
-    text-decoration: none;
-    padding: 4px;
-    align-content:center;
-}
-
-.containermain-texto {
-    border: 2px solid white;
-    background-color: rgb(103, 176, 103);
-    color: black;
-    font-weight: bold;
-    width: 450px;
-    height: 200px;
-    line-height: 15px;
-    text-align:start;
-    margin: 5px;
-    text-decoration: none;
-    align-content:center;
-
-}
 
 .flex-container4 {
     border: 1px solid rgb(255,255,255,o,5);
@@ -216,6 +210,75 @@ background-color: rgb(255,255,255,0,5);
     .edit__img {
         height: 10rem;
         width: 20rem;
+    }
+    .grid__container{
+        margin: 0.5rem;
+    
+        display: grid;
+        border: 2px solid  rgb (255,255,255,0,5);
+        grid-template-areas: "uno dos" 
+                            "tres cuatro"
+                            "cinco seis";
+        gap: 1rem;
+         text-align: center; 
+        
+    
+    }
+    
+    .grid__perrosyatos{
+        grid-template-areas: uno;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    
+    
+    .img__perrosygatos{
+        height: 7rem;
+        width: 7rem;
+    
+    }
+    
+    .grid__alimento{
+        grid-template-areas: dos;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .grid__mantas{
+        grid-template-areas: tres;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .grid__agroquimicos {
+        grid-template-areas: cuatro;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .grid__semillas{
+        grid-template-areas: cinco;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .grid__idai{
+        grid-template-areas: seis;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    .item__grid{
+        border: 1px solid black;
+        background-color: rgb(255, 255, 255, 0.5)
     }
 }
 
