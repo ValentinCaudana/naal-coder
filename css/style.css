@@ -19,7 +19,9 @@ body {
     gap: 10px;
 }
 
-
+.nav-color{
+    color: black;
+}
 
 .navbar-brand:hover {
     transform: scale(1.5);
@@ -191,19 +193,33 @@ body {
 .grid__containermain {
     display: grid;
     border: 5px solid rgb(255,255,255,0,5);
-    grid-template-areas: "uno dos dos"
-                        "uno dos dos";
-    gap: 10px;
+    grid-template-areas: "uno dos tres"
+                        "uno cuatro cinco";
+    gap: 5px;
+}
+.grid__texto {
+    grid-area: uno;
+    background-color: rgb(255,255,255,0,5);
+    margin: 2rem;
 }
 
 .grid__imag {
-grid-area: uno;
+    grid-area: dos;
 }
 
-.grid__texto {
-grid-area: dos;
-background-color: rgb(255,255,255,0,5);
+.grid__imagdos{
+    grid-area: tres;    
 }
+
+.grid__imagtres{
+    grid-area: cuatro;
+}
+
+.grid__imagcuatro{
+    grid-area: cinco;
+}
+
+
 
 
 @media (min-width: 320px) and (max-width: 540px){
@@ -280,8 +296,145 @@ background-color: rgb(255,255,255,0,5);
         border: 1px solid black;
         background-color: rgb(255, 255, 255, 0.5)
     }
+
+    .grid__containermain {
+        display: grid;
+        border: 5px solid rgb(255,255,255,0,5);
+        grid-template-areas: "uno uno uno uno"
+                            "dos tres cuatro cinco";
+        gap: 5px;
+        
+    }
+    .grid__texto {
+        grid-area: uno;
+        background-color: rgb(255,255,255,0,5);
+        margin: 2rem;
+    }
+    
+    .grid__imag {
+        grid-area: dos;
+        display: none;
+    }
+    
+    .grid__imagdos{
+        grid-area: tres;
+        display: none;  
+    }
+    
+    .grid__imagtres{
+        grid-area: cuatro;
+        display: none;
+    }
+    
+    .grid__imagcuatro{
+        grid-area: cinco;
+        display: none;
+    }
 }
 
 @media (min-width: 541px) and (max-width: 720px){
+    .grid__containermain {
+        display: grid;
+        border: 5px solid rgb(255,255,255,0,5);
+        grid-template-areas: "uno uno "
+                            "dos tres ";
+        gap: 5px;
+        
+    }
+    .grid__texto {
+        grid-area: uno;
+        background-color: rgb(255,255,255,0,5);
+        margin: 2rem;
+    }
+    
+    .grid__imag {
+        grid-area: dos;
+        margin: 2rem;
+    }
+    
+    .grid__imagdos{
+        grid-area: tres;
+        margin: 2rem;
+    }
+    
+    .grid__imagtres{
+        grid-area: cuatro;
+        display: none;
+    }
+    
+    .grid__imagcuatro{
+        grid-area: cinco;
+    display: none;
+    }
 
+
+    .grid__container{
+        margin: 0.5rem;
+    
+        display: grid;
+        border: 2px solid  rgb (255,255,255,0,5);
+        grid-template-areas: "uno dos" 
+                            "tres cuatro"
+                            "cinco seis";
+        gap: 1rem;
+         text-align: center; 
+        
+    
+    }
+    
+    .grid__perrosyatos{
+        grid-template-areas: uno;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    
+    
+    .img__perrosygatos{
+        height: 7rem;
+        width: 7rem;
+    
+    }
+    
+    .grid__alimento{
+        grid-template-areas: dos;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .grid__mantas{
+        grid-template-areas: tres;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .grid__agroquimicos {
+        grid-template-areas: cuatro;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .grid__semillas{
+        grid-template-areas: cinco;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .grid__idai{
+        grid-template-areas: seis;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    .item__grid{
+        border: 1px solid black;
+        background-color: rgb(255, 255, 255, 0.5)
+    }
 }
