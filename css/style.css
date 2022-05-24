@@ -101,7 +101,7 @@ body {
 
 .item__grid {
   border: 1px solid black;
-  background-color: rgb 255, 255, 255, 0.5; }
+  background-color: rgba(255, 255, 255, 0.507); }
 
 .menu__desplegable {
   display: flex;
@@ -109,8 +109,8 @@ body {
   justify-content: center; }
 
 .flex-container3 {
-  border: 1px solid rgb 255, 255, 255, o, 5;
-  background-color: rgb 255, 255, 255, 0.5;
+  border: 1px solid rgba(255, 255, 255, 0.507);
+  background-color: rgba(255, 255, 255, 0.507);
   padding: 20px;
   display: flex;
   flex-flow: column;
@@ -121,8 +121,8 @@ body {
   align-content: center; }
 
 .flex-container4 {
-  border: 1px solid rgb 255, 255, 255, o, 5;
-  background-color: rgb 255, 255, 255, 0.5;
+  border: 1px solid rgba(255, 255, 255, 0.507);
+  background-color: rgba(255, 255, 255, 0.507);
   padding: 20px;
   display: flex;
   flex-flow: column;
@@ -150,8 +150,10 @@ body {
 
 .grid__texto {
   grid-area: uno;
-  background-color: rgb 255, 255, 255, 0, 5;
-  margin: 2rem; }
+  background-color: rgba(255, 255, 255, 0.507);
+  margin: 2rem;
+  justify-self: center;
+  align-self: center; }
 
 .grid__imag {
   grid-area: dos; }
@@ -211,7 +213,7 @@ body {
     justify-content: center; }
   .item__grid {
     border: 1px solid black;
-    background-color: rgb 255, 255, 255, 0.5; }
+    background-color: rgb rgba(255, 255, 255, 0.507); }
   .grid__containermain {
     display: grid;
     border: 5px solid rgb 255, 255, 255, 0, 5;
@@ -219,7 +221,7 @@ body {
     gap: 5px; }
   .grid__texto {
     grid-area: uno;
-    background-color: rgb 255, 255, 255, 0, 5;
+    background-color: rgba(255, 255, 255, 0.507);
     margin: 2rem; }
   .grid__imag {
     grid-area: dos;
@@ -242,7 +244,7 @@ body {
     gap: 5px; }
   .grid__texto {
     grid-area: uno;
-    background-color: rgb 255, 255, 255, 0, 5;
+    background-color: rgba(255, 255, 255, 0.507);
     margin: 2rem; }
   .grid__imag {
     grid-area: dos;
