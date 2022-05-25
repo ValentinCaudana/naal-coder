@@ -1,0 +1,31 @@
+.grid{
+    &__containermain{
+        display: grid;
+        border: 5px solid rgb (255,255,255,0,5);
+        grid-template-areas: "uno dos tres"
+                            "uno cuatro cinco";
+        gap: 5px;   
+    }
+    &__texto{
+        grid-area: uno;
+        background-color: $color-secundario;
+        margin: 2rem;
+        justify-self: center;
+        align-self: center;
+    }
+    &__imag {
+        grid-area: dos;
+    }
+    
+    &__imagdos{
+        grid-area: tres;    
+    }
+    
+    &__imagtres{
+        grid-area: cuatro;
+    }
+    
+    &__imagcuatro{
+        grid-area: cinco;
+    }
+}

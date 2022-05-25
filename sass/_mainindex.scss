@@ -1,0 +1,23 @@
+.flex-containerindex{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+
+.edit__img {
+    height: 25rem;
+    width: 50rem;
+}
+
+.main__texto {
+    border: 1px solid rgb(3, 41, 3);
+    background-color: $color-secundario;
+    padding: 20px;
+    display: flex;
+    flex-flow:row wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content:space-between;
+    align-content: space-around;
+}
