@@ -81,6 +81,15 @@ body {
     }
 }
 
+h1{
+    color: black;
+    padding: 2rem;
+}
+h2{
+    padding: 1rem; 
+    font-size: 0.75rem;
+    
+}
 .grid {
     &__container{
         margin: 2rem;
@@ -92,6 +101,7 @@ body {
         gap: 2rem;
          text-align: center;  
     }
+
     &__perrosygatos{
         grid-template-areas: uno;
         display: flex;
@@ -161,19 +171,6 @@ body {
         align-content:center;
     }
 
-    &-container4 {
-        border: 1px solid rgba(255, 255, 255, 0.507);
-        background-color:rgba(255, 255, 255, 0.507);
-        padding: 20px;
-        display: flex;
-        flex-flow:column;
-        width: 300px;
-        height: 450px;
-        margin: 0 auto;
-        justify-content:space-between;
-        align-content:center;
-    }
-
     &-container-redes {
         color: black;
         display: flex;
@@ -221,7 +218,32 @@ body {
     }
 }
 
+.grid{
+    &__contactanos{
+        display: flex;
+        border: 2px solid rgba (255, 255, 255, 0,5);
+        grid-template-areas: "telefonos contacto";
+        margin: 2rem;
+    }
+    
+    &__telefonos{
+        background-color: $color-secundario;
+        display: grid;
+        grid-template-areas: telefonos;
+    }
+    
+    &__contacto{
+        
+        display: grid;
+        grid-template-areas: contacto;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 540px){
+    h1{
+        color: black;
+        padding: 1rem;
+    }
     .edit__img {
         height: 10rem;
         width: 20rem;
@@ -327,6 +349,28 @@ body {
                 grid-area: cinco;
                 display: none;
             }                
+    }
+
+    .grid{
+        &__contactanos{
+            display: flex;
+            border: solid rgba (255, 255, 255, 0,5);
+            grid-template-areas: "telefonos contacto";
+            margin: 0.2rem;
+            align-items: flex-start;
+        }
+        
+        &__telefonos{
+            background-color: $color-secundario;
+            display: grid;
+            grid-template-areas: telefonos;
+        }
+        
+        &__contacto{
+            
+            display: grid;
+            grid-template-areas: contacto;
+        }
     }
 }
 
