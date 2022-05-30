@@ -261,51 +261,54 @@ h3{
         
             display: grid;
             border: 2px solid  rgb (255,255,255,0,5);
-            grid-template-areas: "uno dos" 
-                                "tres cuatro"
-                                "cinco seis";
+            grid-template-areas: "uno" 
+                                "dos" 
+                                "tres" 
+                                "cuatro"
+                                "cinco" 
+                                "seis";
             gap: 0.5rem;
              text-align: center; 
             justify-content: center;
             
         } 
         &__perrosygatos{
-            grid-template-areas: uno;
+            grid-area: uno;
             display: flex;
             flex-direction: column;
             justify-content: center;
         
         }
         &__alimento{
-            grid-template-areas: dos;
+            grid-area: dos;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
         &__mantas{
-            grid-template-areas: tres;
+            grid-area: tres;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
         &__agroquimicos {
-            grid-template-areas: cuatro;
+            grid-area: cuatro;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
         &__semillas{
-            grid-template-areas: cinco;
+            grid-area: cinco;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
         &__idai{
-            grid-template-areas: seis;
+            grid-area: seis;
             display: flex;
             flex-direction: column;
             justify-content: center;
