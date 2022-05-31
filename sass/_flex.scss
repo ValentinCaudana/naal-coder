@@ -1,7 +1,6 @@
 .flex {
     &-container3 {
-        border: 1px solid $color-secundario;
-        background-color: $color-secundario;
+        @extend .bordeuno;
         padding: 20px;
         display: flex;
         flex-flow:column;

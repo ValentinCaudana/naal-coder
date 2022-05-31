@@ -11,8 +11,7 @@
 }
 
 .main__texto {
-    border: 1px solid rgb(3, 41, 3);
-    background-color: $color-secundario;
+    @extend .bordedos;
     padding: 20px;
     display: flex;
     flex-flow:row wrap;
