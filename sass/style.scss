@@ -6,7 +6,8 @@
 @import 'mainnosotros';
 @import 'mainproductos';
 @import 'card';
-@import 'flex';
+@import 'mainpromociones';
+@import 'maincontacto';
 @import 'footer';
 @import 'mediaqueris';
 
@@ -157,19 +158,6 @@ h3{
 }
 
 .flex {
-    &-container3 {
-        border: 1px solid rgba(255, 255, 255, 0.507);
-        background-color: rgba(255, 255, 255, 0.507);
-        padding: 20px;
-        display: flex;
-        flex-flow:column;
-        width: 60%;
-        height: 350px;
-        margin: 0 auto;
-        justify-content:space-between;
-        align-content:center;
-    }
-
     &-container-redes {
         color: black;
         display: flex;
@@ -368,6 +356,7 @@ h3{
                                 "contacto";
             margin: 0.1rem;
             justify-items: flex-start;
+            justify-content: center;
             
             
         }
@@ -495,5 +484,32 @@ h3{
     .item__grid{
         border: 1px solid black;
         background-color: $color-secundario
+    }
+    .grid{
+        &__contactanos{
+            display: grid;
+            border: solid rgba (255, 255, 255, 0,5);
+            grid-template-areas:"telefonos" 
+                                "contacto";
+            margin: 0.1rem;
+            justify-items: flex-start;
+            justify-content: center;
+            
+            
+        }
+        
+        &__telefonos{
+            background-color: $color-secundario;
+            grid-area: telefonos;
+            margin: 2rem;
+            width: 19rem;
+            display: grid;
+        }
+        
+        &__contacto{
+            grid-area: contacto;
+            margin: 0.1rem;
+            
+        }
     }
 }

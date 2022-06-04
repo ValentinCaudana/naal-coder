@@ -1,10 +1,39 @@
-.footer {
-    &__redes {
-        width: 55px;
-        height: 55px;
-    }
+
+.grid{
+    &__footer{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-areas: "uno uno cuatro"
+                         "dos dos cinco"
+                         "tres tres cinco";
+    
+    background-color: rgba(0, 0, 0, 0.765);
+}
+    &__mail{
+    grid-area: uno;
+}
+    &__telefono{
+    grid-area: dos;
+}
     &__ubicacion{
-        width: 70px;
-        height: 70px;  
-    }
+   grid-area: tres;
+}
+    &__facebook{
+    grid-area: cuatro;
+}
+    &__instagram{
+    grid-area: cinco;
+}
+}
+
+.item__footer{
+    display: flex;
+    flex-flow: row;
+    padding: 1rem;
+    gap: 1rem;
+    color: white;
+}
+.img__footer{
+    width: 2rem;
+    height: 2rem;
 }

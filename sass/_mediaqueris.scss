@@ -136,8 +136,94 @@
             
         }
     }
-}
 
+    .grid {
+        &__containerprom{
+            margin: 1rem;
+    
+            display: grid;
+            border: 1rem solid  rgb (255,255,255,0,5);
+            grid-template-areas: "uno" 
+                                "dos";
+                                
+            gap: 1rem;
+            padding: 1rem; 
+        }
+        &__ofertas{
+            grid-area: uno;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        &__descuentos {
+            grid-area: dos;
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+    
+    .item__gridprom{
+        background-color: $color-secundario;
+        border: $color-borde;
+         width: 15rem;
+         height: 30rem;
+    }
+    
+    .titulo__promo {
+        font-size: 1.5rem;
+    }
+    
+    .img__oferta {
+        height: 5rem;
+        width: 7rem;
+    }
+    
+    .titulo__grid {
+        text-align: center;
+    }
+
+    .grid{
+        &__footer{
+        margin: 0.5rem;
+        display: grid;
+        grid-template-areas: "uno uno cuatro"
+                             "dos dos cinco"
+                             "tres tres cinco";
+        
+        background-color: rgba(0, 0, 0, 0.765);
+    }
+        &__mail{
+        grid-area: uno;
+    }
+        &__telefono{
+        grid-area: dos;
+    }
+        &__ubicacion{
+       grid-area: tres;
+    }
+        &__facebook{
+        grid-area: cuatro;
+    }
+        &__instagram{
+        grid-area: cinco;
+    }
+    }
+    
+    .item__footer{
+        display: flex;
+        flex-flow: row;
+        padding: 1rem;
+        gap: 1rem;
+        color: white;
+    }
+    .img__footer{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+}
 
 
 @media (min-width: 541px) and (max-width: 720px){
@@ -244,5 +330,80 @@
     .item__grid{
         border: $color-borde;
         background-color: $color-secundario;
+    }
+
+    .grid{
+        &__contactanos{
+            display: grid;
+            border: solid rgba (255, 255, 255, 0,5);
+            grid-template-areas:"telefonos" 
+                                "contacto";
+            margin: 0.1rem;
+            justify-items: flex-start;
+            
+            
+        }
+        
+        &__telefonos{
+            background-color: $color-secundario;
+            grid-area: telefonos;
+            margin: 0.1rem;
+            width: 19rem;
+            display: grid;
+        }
+        
+        &__contacto{
+            grid-area: contacto;
+            margin: 0.1rem;
+            
+        }
+    }
+
+    .grid {
+        &__containerprom{
+            margin: 1rem;
+    
+            display: grid;
+            border: 1rem solid  rgb (255,255,255,0,5);
+            grid-template-areas: "uno" 
+                                "dos";
+                                
+            gap: 1rem;
+            padding: 1rem; 
+        }
+        &__ofertas{
+            grid-area: uno;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            
+        }
+        &__descuentos {
+            grid-area: dos;
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+    
+    .item__gridprom{
+        background-color: $color-secundario;
+        border: $color-borde;
+         width: 25rem;
+         height: 25rem;
+    }
+    
+    .titulo__promo {
+        font-size: 1.5rem;
+    }
+    
+    .img__oferta {
+        height: 10rem;
+        width: 12rem;
+    }
+    
+    .titulo__grid {
+        text-align: center;
     }
 }

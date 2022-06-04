@@ -1,0 +1,46 @@
+.grid {
+    &__containerprom{
+        margin: 2rem;
+
+        display: grid;
+        border: 1rem solid  rgb (255,255,255,0,5);
+        grid-template-areas: "uno dos";
+                            
+        gap: 2rem;
+        padding: 1rem; 
+    }
+    &__ofertas{
+        grid-area: uno;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        @extend .bordedos;
+    }
+    &__descuentos {
+        grid-area: dos;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        /* align-self: center; */
+    }
+}
+
+.item__gridprom{
+    @extend .bordeuno;
+     width: 25rem;
+     height: 20rem;
+}
+
+.titulo__promo {
+    font-size: 3rem;
+}
+
+.img__oferta {
+    height: 5rem;
+    width: 10rem;
+}
+
+.titulo__grid {
+    text-align: center;
+}

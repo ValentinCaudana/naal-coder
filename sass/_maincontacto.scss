@@ -1,0 +1,26 @@
+.grid{
+    &__contactanos{
+        display: grid;
+        border: 2px solid rgba (255, 255, 255, 0,5);
+        grid-template-areas: "telefonos contacto";
+        margin: 2rem;
+        justify-content:flex-start;
+        gap: 10rem;
+
+    }
+    
+    &__telefonos{
+        background-color: $color-secundario;
+        display: grid;
+        grid-template-areas: telefonos;
+        justify-items: center;
+        width: 25rem;
+        font-size: 1.2rem;
+    }
+    
+    &__contacto{
+        
+        display: grid;
+        grid-template-areas: contacto;
+    }
+}

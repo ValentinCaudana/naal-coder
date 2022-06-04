@@ -41,38 +41,84 @@
           </nav>
     </header>
     <h1>Promociones</h1>
-    <main class="flex-container3">
-        <section >
-            <div class="dropdown">
-                <button class="btn btn-outline-dark" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                  OFERTAS
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Bactrovet Vigencia 1-02-2022.pdf" target="blank">Bactrovet</a></li>
-                  <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Infinity -Vigencia 27-01-2022.pdf" target="blank">Infinity</a></li>
-                  <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Konig - Enero 2022.pdf" target="blank">Konig</a></li>
-                  <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Osspret  Vigencia 09-11-2021.pdf" target="blank">Osspret</a></li>
-                  <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Termixan - Vigencia 6-10-2021.pdf" target="blank">Termixan</a></li>
-                  <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Ultra Raticida Vigencia 07-07-2021.pdf" target="blank">Ultra Raticida</a></li>
-                  <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Vetue - Nov 2021.pdf" target="blank">Vetue</a></li>
-                  <li><a class="dropdown-item" href="../recursos/listas/ofertas/Promocion GEMPLAST MACETAS - SEP 19.pdf" target="blank">Gemplast</a></li>
-                </ul>
+    <main class="grid__containerprom">
+          <section class="item__gridprom grid__ofertas">
+            <div>
+              <div class="caption">
+                <h3 class="titulo__promo">¡IMPERDIBLE!</h3>
+                <a >
+                  <img src="../recursos/imagenes/oferta-dos.png" class="img__oferta" alt="imagen de perro y gato">
+                </a>
+                <p >Aqui te ofrecemos los mejores descuentos en las listas de Termixan, Bactrovet, Konig, Osspret, Vetue, Infinity, Gemplast y Ultra Raticida.</p>
+                <div class="dropdown menu__desplegable">
+                  <button class="btn btn-outline-dark" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      OFERTAS
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Bactrovet Vigencia 1-02-2022.pdf" target="blank">Bactrovet</a></li>
+                    <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Infinity -Vigencia 27-01-2022.pdf" target="blank">Infinity</a></li>
+                    <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Konig - Enero 2022.pdf" target="blank">Konig</a></li>
+                    <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Osspret  Vigencia 09-11-2021.pdf" target="blank">Osspret</a></li>
+                    <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Termixan - Vigencia 6-10-2021.pdf" target="blank">Termixan</a></li>
+                    <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Ultra Raticida Vigencia 07-07-2021.pdf" target="blank">Ultra Raticida</a></li>
+                    <li><a class="dropdown-item" href="../recursos/listas/ofertas/Oferta Vetue - Nov 2021.pdf" target="blank">Vetue</a></li>
+                    <li><a class="dropdown-item" href="../recursos/listas/ofertas/Promocion GEMPLAST MACETAS - SEP 19.pdf" target="blank">Gemplast</a></li>
+                  </ul>
+                </div>
               </div>
-        </section>
-        <section>
-            <h2>Descuentos en Factura</h2>
-                <ol>
+            </div>
+        </section>  
+        <section class="grid____descuentos item__gridprom ">
+            <h2 class="titulo__grid">Descuentos en Factura</h2>
+                <ul>
                     <li>Por pago contra factura (10%)</li>
                     <li>Antes de los 7 dias despues de factura (7%)</li>
                     <li>Antes de los 21 dias despues de factura (5%)</li>
-                </ol>
+                    <li>Semillas (23%)</li>
+                    <li>Semillas Profecional (15%/18%)</li>
+                    <li>Agroquimicos pack cerrado (5%)</li>
+                </ul>    
+              <h2 class="titulo__grid">Intereses</h2> 
+                <ul>
+                    <li>Cheque a 30 dias (+5%)</li>
+                    <li>Cheque a 90 dias (+10%)</li>
+                </ul>
         </section>
     </main>
-    <footer class="flex-container-redes">
-        <a href="https://www.facebook.com/Naal.Arg" target="blank"><img class="footer__redes" src="../recursos/imagenes/logo-facebook.png" alt="enlace a facebook"></a></li>
-        <a href="https://www.instagram.com/naal.arg/?hl=es" target="blank"><img class="footer__redes" src="../recursos/imagenes/logo-instagram.png" alt="enlace a instagram"></a></li>    
-        
-     </footer>
+    <footer>
+      <section class="grid__footer">
+        <div class="item__footer grid__telefono">
+          <a>
+            <img src="../recursos/imagenes/llamada-logo.png" class="img__footer" alt="Logo de Telefono">
+          </a>
+          <p>351-7671562</p>
+        </div>
+        <div class="item__footer grid__mail">
+          <a>
+            <img src="../recursos/imagenes/mail-logo.png" class="img__footer" alt="Logo de Carta (logo mail)">
+          </a>
+          <p>naal@gmail.com</p>
+        </div>
+        <div class="item__footer grid__ubicacion">
+          <a>
+            <img src="../recursos/imagenes/ubicacion-logo.png" class="img__footer" alt="Logo de Ubicacion">
+          </a>
+          <p>Agustin Garzon 2238</p>
+        </div>
+        <div class="item__footer grid__facebook">
+          <a href="https://www.facebook.com/Naal.Arg" target="blank">
+            <img class="img__footer" src="../recursos/imagenes/faceboo-logo.png" alt="enlace a facebook">
+          </a>
+          <p>Aqui podra seguirnos.</p>
+        </div>
+        <div class="item__footer grid__instagram">
+          <a href="https://www.instagram.com/naal.arg/?hl=es" src="" target="blank">
+            <img class="img__footer" src="../recursos/imagenes/instagram-logo.png" alt="enlace a instagram">
+          </a>
+          <p>Aqui podra ver nuestras fotos.</p>
+        </div>
+      </section>  
+    </footer>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
