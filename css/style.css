@@ -40,7 +40,7 @@ body {
   padding: 20px;
   display: flex;
   flex-flow: row wrap;
-  width: 200rem;
+  width: 90%;
   margin: 0 auto;
   justify-content: space-between;
   align-content: space-around; }
