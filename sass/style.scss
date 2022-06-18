@@ -379,6 +379,12 @@ h3{
 }
 
 @media (min-width: 541px) and (max-width: 720px){
+    
+    .edit__img {
+        height: 20rem;
+        width: 35rem;
+    }
+    
     .grid {
        &__containermain {
             display: grid;
